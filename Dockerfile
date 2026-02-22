@@ -19,8 +19,5 @@ RUN mkdir -p /etc/xray
 # Copy config ke folder yang baru dibuat
 COPY config.json /etc/xray/config.json
 
-# Pakai port 8080 (Biar nggak rebutan sama sistem ClawCloud)
-EXPOSE 8080
-
 # Jalankan Xray
-CMD ["/usr/local/bin/xray", "run", "-c", "/etc/xray/config.json"]
+CMD ["xray", "-c", "/etc/xray/config.json"]
