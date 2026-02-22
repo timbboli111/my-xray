@@ -1,24 +1,41 @@
 {
-  "inbounds": [{
-    "port": 443,
-    "protocol": "vless",
-    "settings": {
-      "clients": [{"id": "6d2f9a1b-e8c4-4b3a-9d72-f5a81c0e92d7", "flow": "xtls-rprx-vision"}],
-      "decryption": "none"
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "show": false,
-        "dest": "www.microsoft.com:443",
-        "xver": 0,
-        "serverNames": ["www.microsoft.com"],
-        "privateKey": "GOnfV3U70jJjEOn9I0K9o3M4S_YpA1_YpA1_YpA1_Y0=",
-        "shortIds": ["6e7f8g9h"]
+  "log": {
+    "loglevel": "info"
+  },
+  "inbounds": [
+    {
+      "port": 443,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "6d2f9a1b-e8c4-4b3a-9d72-f5a81c0e92d7",
+            "flow": "xtls-rprx-vision"
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "show": false,
+          "dest": "www.google.com:443",
+          "xver": 0,
+          "serverNames": [
+            "www.google.com"
+          ],
+          "privateKey": "GOnfV3U70jJjEOn9I0K9o3M4S_YpA1_YpA1_YpA1_Y0=",
+          "shortIds": [
+            "6e7f8g9h"
+          ]
+        }
       }
     }
-  }],
-  "outbounds": [{"protocol": "freedom"}]
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom"
+    }
+  ]
 }
-
