@@ -17,8 +17,8 @@
         "dest": "www.google.com:443",
         "xver": 0,
         "serverNames": ["www.google.com"],
-        "privateKey": "uO3W-f705N-X7_S9XlP7_N7O9W1S3A5N7E9R1I1K0X0=",
-        "shortIds": ["6e7f8a9b1c2d3e4f"]
+        "privateKey": "uBvO_mJ_N0o0T4_V5D6D9_T1H2V3E4R5I6K7A8N1S0=",
+        "shortIds": ["abcdef1234567890"]
       }
     }
   }],
