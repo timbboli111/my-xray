@@ -1,28 +1,35 @@
 {
-  "inbounds": [{
-    "port": 8080,
-    "protocol": "vless",
-    "settings": {
-      "clients": [{
-        "id": "6d2f9a1b-e8c4-4b3a-9d72-f5a81c0e92d7",
-        "flow": "xtls-rprx-vision"
-      }],
-      "decryption": "none"
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": "reality",
-      "realitySettings": {
-        "show": false,
-        "dest": "www.google.com:443",
-        "xver": 0,
-        "serverNames": ["www.google.com"],
-        "privateKey": "uGRfWEnHl0tG9r-lW5Kx2L_S_oF_w7hD1FjP3C9P9XM=",
-        "shortIds": ["6e7f8a9b1c2d3e4f"]
+  "inbounds": [
+    {
+      "port": 8080,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "6d2f9a1b-e8c4-4b3a-9d72-f5a81c0e92d7"
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "dest": "www.google.com:443",
+          "serverNames": [
+            "www.google.com"
+          ],
+          "privateKey": "uGRfWEnHl0tG9r-lW5Kx2L_S_oF_w7hD1FjP3C9P9XM=",
+          "shortIds": [
+            "6e7f8a9b1c2d"
+          ]
+        }
       }
     }
-  }],
-  "outbounds": [{
-    "protocol": "freedom"
-  }]
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom"
+    }
+  ]
 }
