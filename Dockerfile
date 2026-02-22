@@ -7,4 +7,4 @@ RUN wget https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-6
     rm -rf Xray-linux-64.zip
 COPY config.json /etc/config.json
 # Menjalankan xray dengan flag log stderr agar kita bisa liat errornya di ClawCloud
-CMD ["xray", "-config", "/etc/config.json"]
+CMD ["xray", "run", "-config", "/etc/config.json"]
