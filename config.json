@@ -1,7 +1,7 @@
 {
   "inbounds": [
     {
-      "port": 8080,
+      "port": 443,
       "protocol": "vless",
       "settings": {
         "clients": [
@@ -13,7 +13,7 @@
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "reality",
+        "security": "wsSetting",
         "realitySettings": {
           "dest": "www.google.com:443",
           "serverNames": [
